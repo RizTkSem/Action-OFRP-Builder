@@ -115,6 +115,7 @@ jobs:
         export FOX_VIRTUAL_AB_DEVICE=1
         export OF_FORCE_PREBUILT_KERNEL=1
         export OF_DEFAULT_KEYMASTER_VERSION=4.1
+        export FOX_DRASTIC_SIZE_REDUCTION=1
         set -e
         lunch ${{ github.event.inputs.MAKEFILE_NAME }}-eng && make clean && mka adbd ${{ github.event.inputs.BUILD_TARGET }}image -j$(nproc --all)
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
