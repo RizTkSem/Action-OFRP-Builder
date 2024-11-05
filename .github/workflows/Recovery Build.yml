@@ -119,6 +119,7 @@ jobs:
         export OF_IGNORE_LOGICAL_MOUNT_ERRORS=1
         export OF_DONT_KEEP_LOG_HISTORY=1
         export OF_FORCE_PREBUILT_KERNEL=1
+        export OF_ADVANCED_SECURITY=1
         export OF_DEFAULT_KEYMASTER_VERSION=4.1
         export FOX_DELETE_AROMAFM=1
         export FOX_REMOVE_AAPT=1
